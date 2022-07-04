@@ -3,6 +3,14 @@ import Topbar from "./components/Topbar";
 
 import styled from "styled-components";
 import Home from "./pages/Home";
+import UserList from "./pages/UserList";
+
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 
 const Container = styled.div`
 display:flex;
@@ -15,14 +23,17 @@ display:flex;
 
 function App() {
   return (
-    <>
-      <Topbar />
-      <Container>
+      <BrowserRouter>
+        <Topbar />
+        <Container>
         <Sidebar />
-        <Home/>
-      </Container>
-  
-    </>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/users" element={<UserList />}/>
+        </Routes>
+        </Container>
+      </BrowserRouter>
+
   );
 }
 
