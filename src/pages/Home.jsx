@@ -15,12 +15,12 @@ margin:20px;
 `
 const Home = () => {
   return (
-      <Container>
+    <Container>
       <FeaturedInfo />
       <Chart data={userData} title="User Analytics" grid dataKey="Active User" />
       <HomeWidget>
         <WidgetSm />
-        <WidgetLg/>
+        <WidgetLg />
       </HomeWidget>
     </Container>
   )

@@ -1,14 +1,17 @@
 import styled from "styled-components";
 
-import { LineStyle, TrendingUp, Timeline,  PermIdentity,
-  Storefront,
-  AttachMoney,
-  BarChart,
-  MailOutline,
-  DynamicFeed,
-  ChatBubbleOutline,
-  WorkOutline,
-  Report,} from "@mui/icons-material"
+import {
+    LineStyle, TrendingUp, Timeline, PermIdentity,
+    Storefront,
+    AttachMoney,
+    BarChart,
+    MailOutline,
+    DynamicFeed,
+    ChatBubbleOutline,
+    WorkOutline,
+    Report,
+} from "@mui/icons-material"
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
     flex:1;
@@ -48,71 +51,93 @@ border-radius:5px;
 
 `
 const Sidebar = () => {
-  return (
-      <Container>
-          <Wrapper>
-              <SidebarMenu>
-                  <SidebarTitle>Dashboard</SidebarTitle>
-                  <SidebarList>
-                      <SidebarListItem>
-                          <LineStyle style={{marginRight:"10px",fontSize:"20px"}} />Home
-                      </SidebarListItem>
-                      <SidebarListItem>
-                          <Timeline style={{marginRight:"10px",fontSize:"20px"}}/>Analytics
-                      </SidebarListItem>
-                      <SidebarListItem>
-                          <TrendingUp style={{marginRight:"10px",fontSize:"20px"}}/>Sales
-                      </SidebarListItem>
-                  </SidebarList>
-              </SidebarMenu>
-              <SidebarMenu>
-                  <SidebarTitle>Quick Menu</SidebarTitle>
-                  <SidebarList>
-                      <SidebarListItem>
-                          <PermIdentity style={{marginRight:"10px",fontSize:"20px"}} />Users
-                      </SidebarListItem>
-                      <SidebarListItem>
-                          <Storefront style={{marginRight:"10px",fontSize:"20px"}}/>Products
-                      </SidebarListItem>
-                      <SidebarListItem>
-                          <AttachMoney style={{marginRight:"10px",fontSize:"20px"}}/>Transactions
-                      </SidebarListItem>
-                      <SidebarListItem>
-                          <BarChart style={{marginRight:"10px",fontSize:"20px"}}/>Reports
-                      </SidebarListItem>                     
-                  </SidebarList>
-              </SidebarMenu>
-              <SidebarMenu>
-                <SidebarTitle>Notifications</SidebarTitle>
-                  <SidebarList>
-                      <SidebarListItem>
-                          <MailOutline style={{marginRight:"10px",fontSize:"20px"}} />Mail
-                      </SidebarListItem>
-                      <SidebarListItem>
-                          <DynamicFeed style={{marginRight:"10px",fontSize:"20px"}}/>Feedback
-                      </SidebarListItem>
-                      <SidebarListItem>
-                          <ChatBubbleOutline  style={{marginRight:"10px",fontSize:"20px"}}/>Messages
-                      </SidebarListItem>
-                  </SidebarList>
-              </SidebarMenu>
-              <SidebarMenu>
-                  <SidebarTitle>Staff</SidebarTitle>
-                  <SidebarList>
-                      <SidebarListItem>
-                          <WorkOutline style={{marginRight:"10px",fontSize:"20px"}} />Manage
-                      </SidebarListItem>
-                      <SidebarListItem>
-                          <Timeline style={{marginRight:"10px",fontSize:"20px"}}/>Analytics
-                      </SidebarListItem>
-                      <SidebarListItem>
-                          <Report style={{marginRight:"10px",fontSize:"20px"}}/>Reports
-                      </SidebarListItem>
-                  </SidebarList>
-            </SidebarMenu>              
-          </Wrapper> 
-    </Container>
-  )
+    return (
+        <Container>
+            <Wrapper>
+                <SidebarMenu>
+                    <SidebarTitle>Dashboard</SidebarTitle>
+                    <SidebarList>
+                        <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+                            <SidebarListItem>
+                                <LineStyle style={{ marginRight: "10px", fontSize: "20px" }} />Home
+                            </SidebarListItem>
+                        </Link>
+                        <Link to="/analytics" style={{ textDecoration: "none",color:"inherit" }}>
+                            <SidebarListItem>
+                                <Timeline style={{ marginRight: "10px", fontSize: "20px" }} />Analytics
+                            </SidebarListItem>
+                        </Link>
+                        <Link to="/sales" style={{ textDecoration: "none", color: "inherit" }}>
+                            <SidebarListItem>
+                                <TrendingUp style={{ marginRight: "10px", fontSize: "20px" }} />Sales
+                            </SidebarListItem>
+                        </Link>
+                    </SidebarList>
+                </SidebarMenu>
+                <SidebarMenu>
+                    <SidebarTitle>Quick Menu</SidebarTitle>
+                    <SidebarList>
+                        <Link to="/users" style={{ textDecoration: "none", color: "inherit" }}>
+                            <SidebarListItem>
+                                <PermIdentity style={{ marginRight: "10px", fontSize: "20px" }} />Users
+                            </SidebarListItem>
+                        </Link>
+                        <Link to="/products" style={{ textDecoration: "none", color: "inherit" }}>
+                            <SidebarListItem>
+                                <Storefront style={{ marginRight: "10px", fontSize: "20px" }} />Products
+                            </SidebarListItem>
+                        </Link>
+                        <Link to="/transactions" style={{ textDecoration: "none", color: "inherit" }}>
+                            <SidebarListItem >
+                                <AttachMoney style={{ marginRight: "10px", fontSize: "20px" }} />Transactions
+                            </SidebarListItem>
+                        </Link>
+                        <Link to="/reports" style={{ textDecoration: "none", color: "inherit" }}>
+                            <SidebarListItem>
+                                <BarChart style={{ marginRight: "10px", fontSize: "20px" }} />Reports
+                            </SidebarListItem>
+                        </Link>
+
+                    </SidebarList>
+                </SidebarMenu>
+                <SidebarMenu>
+                    <SidebarTitle>Notifications</SidebarTitle>
+                    <SidebarList>
+                        <Link to="/mail" style={{ textDecoration: "none", color: "inherit" }}>
+                            <SidebarListItem>
+                                <MailOutline style={{ marginRight: "10px", fontSize: "20px" }} />Mail
+                            </SidebarListItem>
+                        </Link>
+                        <Link to="/feedback" style={{ textDecoration: "none", color: "inherit" }}>
+                            <SidebarListItem>
+                                <DynamicFeed style={{ marginRight: "10px", fontSize: "20px" }} />Feedback
+                            </SidebarListItem>
+                        </Link>
+                        <Link to="/messages" style={{ textDecoration: "none", color: "inherit" }}>
+                            <SidebarListItem>
+                                <ChatBubbleOutline style={{ marginRight: "10px", fontSize: "20px" }} />Messages
+                            </SidebarListItem>
+                        </Link>
+
+                    </SidebarList>
+                </SidebarMenu>
+                <SidebarMenu>
+                    <SidebarTitle>Staff</SidebarTitle>
+                    <SidebarList>
+                        <SidebarListItem>
+                            <WorkOutline style={{ marginRight: "10px", fontSize: "20px" }} />Manage
+                        </SidebarListItem>
+                        <SidebarListItem>
+                            <Timeline style={{ marginRight: "10px", fontSize: "20px" }} />Analytics
+                        </SidebarListItem>
+                        <SidebarListItem>
+                            <Report style={{ marginRight: "10px", fontSize: "20px" }} />Reports
+                        </SidebarListItem>
+                    </SidebarList>
+                </SidebarMenu>
+            </Wrapper>
+        </Container>
+    )
 }
 
 export default Sidebar

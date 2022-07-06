@@ -2,9 +2,6 @@
 	"folders": [
 		{
 			"path": "."
-		},
-		{
-			"path": "..\\..\\..\\TUTS\\Js\\lamadev\\admin\\youtube-react-admin"
 		}
 	],
 	"settings": {}

@@ -55,7 +55,7 @@ const Button = styled.button`
     } else {
       return "#fff0f1"
     }
-}};
+  }};
 color: ${(props) => {
     if (props.status === "approved") {
       return "#3bb077"
@@ -95,7 +95,7 @@ const WidgetLg = () => {
         <TableRow>
           <TableCell>
             <UserInfo>
-            <Image src="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500"></Image><Name>Tyson Lukale</Name></UserInfo>
+              <Image src="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500"></Image><Name>Tyson Lukale</Name></UserInfo>
           </TableCell>
           <TableCell>
             2 Jun 2021
@@ -106,7 +106,7 @@ const WidgetLg = () => {
         <TableRow>
           <TableCell>
             <UserInfo>
-            <Image src="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500"></Image><Name>Tyson Lukale</Name></UserInfo>
+              <Image src="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500"></Image><Name>Tyson Lukale</Name></UserInfo>
           </TableCell>
           <TableCell>
             2 Jun 2021

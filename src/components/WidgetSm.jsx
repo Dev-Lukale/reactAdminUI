@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import {Visibility } from "@mui/icons-material"
+import { Visibility } from "@mui/icons-material"
 
 const Wrapper = styled.div`
 flex:1;
@@ -36,7 +36,7 @@ const Name = styled.span`
     font-weight: 600;`
 const UserTitle = styled.span`
     font-weight: 300;
-` 
+`
 const Button = styled.button`
     display: flex;
     align-items: center;
@@ -49,10 +49,10 @@ const Button = styled.button`
 `
 
 const WidgetSm = () => {
-  return (
-      <Wrapper>
-          <Title>New Users</Title>
-          <List>
+    return (
+        <Wrapper>
+            <Title>New Users</Title>
+            <List>
                 <ListItem>
                     <Image src="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500"></Image>
                     <UserInfo>
@@ -60,9 +60,9 @@ const WidgetSm = () => {
                         <UserTitle>Software Engineer</UserTitle>
                     </UserInfo>
                     <Button>
-                        <Visibility style={{fontSize:"16px",marginRight:"5px"}}/> Display
-                        </Button>
-              </ListItem>
+                        <Visibility style={{ fontSize: "16px", marginRight: "5px" }} /> Display
+                    </Button>
+                </ListItem>
                 <ListItem>
                     <Image src="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500"></Image>
                     <UserInfo>
@@ -70,9 +70,9 @@ const WidgetSm = () => {
                         <UserTitle>Software Engineer</UserTitle>
                     </UserInfo>
                     <Button>
-                        <Visibility style={{fontSize:"16px",marginRight:"5px"}}/> Display
-                        </Button>
-              </ListItem>
+                        <Visibility style={{ fontSize: "16px", marginRight: "5px" }} /> Display
+                    </Button>
+                </ListItem>
                 <ListItem>
                     <Image src="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500"></Image>
                     <UserInfo>
@@ -80,13 +80,13 @@ const WidgetSm = () => {
                         <UserTitle>Software Engineer</UserTitle>
                     </UserInfo>
                     <Button>
-                        <Visibility style={{fontSize:"16px",marginRight:"5px"}}/> Display
-                        </Button>
-              </ListItem>
-              
-          </List>
-    </Wrapper>
-  )
+                        <Visibility style={{ fontSize: "16px", marginRight: "5px" }} /> Display
+                    </Button>
+                </ListItem>
+
+            </List>
+        </Wrapper>
+    )
 }
 
 export default WidgetSm

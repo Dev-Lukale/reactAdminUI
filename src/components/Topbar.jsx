@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {NotificationsNone,Language,Settings } from "@mui/icons-material"
+import { NotificationsNone, Language, Settings } from "@mui/icons-material"
 
 const Container = styled.div`
 width: 100%;
@@ -59,30 +59,30 @@ background-size: cover;
 `
 
 const Topbar = () => {
-  return (
-      <Container>
-          <Wrapper>
-              <TopLeft>
-                  <Logo>Admin Panel</Logo>
-              </TopLeft>
-              <TopRight>
-                  <TopRightIcon>
-                      <NotificationsNone />
-                      <Badge>2</Badge>
-                  </TopRightIcon>
-                  <TopRightIcon>
-                      <Language/>
-                  </TopRightIcon>
-                  <TopRightIcon>
-                      <Settings/>
-                  </TopRightIcon>
+    return (
+        <Container>
+            <Wrapper>
+                <TopLeft>
+                    <Logo>Admin Panel</Logo>
+                </TopLeft>
+                <TopRight>
                     <TopRightIcon>
-                      <Avatar src="https://images.pexels.com/photos/1526814/pexels-photo-1526814.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
-                  </TopRightIcon>
-              </TopRight>
-        </Wrapper>
-    </Container>
-  )
+                        <NotificationsNone />
+                        <Badge>2</Badge>
+                    </TopRightIcon>
+                    <TopRightIcon>
+                        <Language />
+                    </TopRightIcon>
+                    <TopRightIcon>
+                        <Settings />
+                    </TopRightIcon>
+                    <TopRightIcon>
+                        <Avatar src="https://images.pexels.com/photos/1526814/pexels-photo-1526814.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+                    </TopRightIcon>
+                </TopRight>
+            </Wrapper>
+        </Container>
+    )
 }
 
 export default Topbar
