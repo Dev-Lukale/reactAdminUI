@@ -3,13 +3,14 @@ import {Link} from "react-router-dom"
 
 const Wrapper = styled.div`
     flex:4;
-    display: flex;
-    align-items: center;
-    justify-content:center;
+
 `
 const Container=styled.div`
 display:flex;  
 flex-direction:column;
+display: flex;
+align-items: center;
+justify-content:center;
 margin-right:200px;
 `
 const Button=styled.button`
