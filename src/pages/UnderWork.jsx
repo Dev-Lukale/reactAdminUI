@@ -27,7 +27,7 @@ const UnderWork = () => {
       <Wrapper>
           <Container>
               <h2>Working on this feature!!</h2>
-                <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>>
+                <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
                     <Button>Home page</Button>
                 </Link>
           </Container>
