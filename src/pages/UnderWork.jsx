@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import {Link} from "react-router-dom"
 
 const Wrapper = styled.div`
     flex:4;
@@ -26,7 +27,9 @@ const UnderWork = () => {
       <Wrapper>
           <Container>
               <h2>Working on this feature!!</h2>
-              <Button>Home page</Button>
+                <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>>
+                    <Button>Home page</Button>
+                </Link>
           </Container>
     </Wrapper>
   )
